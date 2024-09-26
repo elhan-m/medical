@@ -1,0 +1,569 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .app-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Header styles */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: white;
+    margin-bottom: 40px;
+  }
+  
+  header div:first-child {
+    display: flex;
+    align-items: center;
+  }
+  
+  header img {
+    height: 40px;
+    margin-right: 20px;
+  }
+  
+  header a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+  }
+  
+  header a:hover {
+    color: blue;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  header a:first-child {
+    font-weight: bold;
+  }
+  
+  .sign-in, .sign-up {
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .sign-in {
+    background: none;
+    color: black;
+  }
+  
+  .sign-up {
+    background-color: #4a90e2;
+    color: white;
+    border-radius: 5px;
+    margin-left: 10px;
+  }
+  
+  /* Hero section styles */
+  .hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+  }
+  
+  .hero-content {
+    max-width: 50%;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #000000;
+  }
+  
+  .contact-button {
+    background-color: #4a90e2;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .hero-image img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Solutions section styles */
+  .solutions-section {
+    background-color: #fff;
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .solutions-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+  }
+  
+  .steps-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px 0;
+  }
+  
+  .step {
+    flex: 0 0 auto;
+    width: 250px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .step img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+  }
+  
+  .step h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .step p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+  }
+  
+  /* Find Doctor section styles */
+  .find-doctor-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px 0;
+  }
+  
+  .find-doctor-content {
+    max-width: 50%;
+  }
+  
+  .find-doctor-content h1 {
+    width: 493px;
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .find-doctor-content p {
+    width: 531px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .find-doctor-content ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .find-doctor-content li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .find-doctor-content li:before {
+    content: "✓";
+    color: #4a90e2;
+    margin-right: 10px;
+  }
+  
+  .see-doctors-button {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .available-doctors {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+  }
+  
+  .doctor-list {
+    margin-bottom: 20px;
+  }
+  
+  .doctor {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .doctor img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .find-doctor-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .doctor-image img {
+    max-width: 100%;
+    height: auto;
+  }.schedule-section {
+    display: flex;
+    align-items: center;
+
+    border-radius: 10px;
+   
+    margin: 20px 0;
+  }
+  
+  /* .schedule-image {
+    flex: 1;
+    max-width: 50%;
+  } */
+  
+  .schedule-image img {
+    width: 100%;
+    height: auto;
+   border-radius: 35%;
+  }
+  
+  .schedule-content {
+    flex: 1;
+    padding: 30px;
+  }
+  
+  .schedule-content h3 {
+    color: #4a90e2;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  
+  .schedule-content h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .schedule-content p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    width: 472px;
+  }
+  
+  .schedule-content ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  
+  .schedule-content li {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .schedule-content li::before {
+    content: "✓";
+    color: #4a90e2;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .schedule-button {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .schedule-button:hover {
+    background-color: #357abD;
+  }/* Стили для секции рейтинга */
+.schedule-section {
+    text-align: center;
+    margin: 50px 0;
+  }
+  
+  .schedule-section h6 {
+    color: #007bff;
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 10px; /* Добавлен отступ для заголовка */
+  }
+  
+  .rating-description {
+    margin-bottom: 30px; /* Добавлено пространство между текстом и карточками */
+  }
+  
+  .rating-description p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .rating-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .rating-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 200px;
+  }
+  
+  .rating-card h3 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .rating-card p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .rating-card span {
+    font-size: 14px;
+    color: #888;
+    margin-top: 5px;
+    display: block;
+  }
+  .schedule-section-two{
+margin-left: 150px;
+  }
+  .feedback-section {
+    text-align: center;
+    margin: 60px 0;
+    padding: 0 20px;
+  }
+  
+  .feedback-section h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .feedback-subtitle {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 40px;
+  }
+  
+  .feedback-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .feedback-image img {
+    max-width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .feedback-text {
+    max-width: 500px;
+    text-align: left;
+  }
+  
+  .feedback-quote {
+    font-size: 18px;
+    font-style: italic;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .feedback-text h4 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .feedback-user {
+    font-size: 14px;
+    color: #888;
+  }
+  .footer {
+
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    flex-wrap: wrap;
+  }
+  
+  .footer-section {
+    flex: 1;
+    margin: 10px;
+  }
+  
+  .logo-section {
+    flex: 2;
+  }
+  
+  .logo-section h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .logo-section .highlight {
+    color: #5b87fa; /* Цвет выделенной части текста */
+  }
+  
+  .footer-section h4 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .footer-section p {
+    font-size: 14px;
+    color: #777;
+    line-height: 1.6;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-section ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-section ul li a:hover {
+    color: #5b87fa;
+  }
+  
+  .social-media-section .social-icons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .social-icons a img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-icons a:hover img {
+    transform: scale(1.1);
+  }
+  
+  
+  @media (max-width: 768px) {
+    .schedule-section {
+      flex-direction: column;
+    }
+    
+    .schedule-image {
+      max-width: 100%;
+    }
+    
+    .schedule-content {
+      padding: 20px;
+    }
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .hero-section, .find-doctor-section {
+      flex-direction: column;
+    }
+  
+    .hero-content, .find-doctor-content {
+      max-width: 100%;
+      margin-bottom: 30px;
+    }
+  
+    .find-doctor-content h1,
+    .find-doctor-content p {
+      width: 100%;
+    }
+  
+    .steps-container {
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      justify-content: flex-start;
+    }
+  
+    .step {
+      flex: 0 0 auto;
+      width: 80%;
+    }
+  
+    .available-doctors {
+      width: 100%;
+    }
+  }
